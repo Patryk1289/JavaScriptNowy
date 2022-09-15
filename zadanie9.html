@@ -27,9 +27,12 @@ var iloscsekund2=roznica2*sekgodz;
 var iloscsekund3=iloscsekund-iloscsekund2;
 
 document.write("Ilość sekund= "+iloscsekund3+"<br>");
-
+ function okno_zamknij_Siepka()
+{
+window.close();
+}
 
 </script>
-
+<input type="button" name="przycisk" value="Zamknij Okno" onclick="okno_zamknij_Siepka(' ')">
 </body>
 </html>
