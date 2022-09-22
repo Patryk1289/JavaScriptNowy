@@ -14,7 +14,13 @@ const ab=A_sie+B_sie;
 
 document.write("("+A_sie+"+"+B_sie+")^3="+A_sie+"^3 + 3*(("+A_sie+")^"+B_sie+")*("+B_sie+") + 3*("+A_sie+")*(("+B_sie+"^"+B_sie+") + "+B_sie+"^3 ="+Math.pow(A_sie, 3)+"+"+3*Math.pow(A_sie, B_sie)*B_sie+"+"+3*A_sie*Math.pow(B_sie, B_sie)+"+"+Math.pow(B_sie, 3)+"="+Math.pow(ab, 3));
 
-        </script>
+ function okno_zamknij_Siepka()
+{
+window.close();
+}
+
+</script>
+<input type="button" name="przycisk" value="Zamknij Okno" onclick="okno_zamknij_Siepka(' ')">
        
     </body>
 </html>
