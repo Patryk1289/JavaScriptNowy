@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script language="Javascript">
+var c_sie=prompt("Podaj pierwszy bok trójkąta c=","");
+var b_sie=prompt("Podaj drugi bok trójkąta b=","");
+
+var c=parseFloat(c_sie);
+var b=parseFloat(b_sie);
+
+var cos_sie=b/c;
+var pitagoras_sie=Math.pow(c,2)-Math.pow(b,2);
+var a_sie=Math.sqrt(pitagoras_sie);
+var sin_sie=a_sie/c;
+var tg_sie=a_sie/b;
+var ctg_sie=b/a_sie;
+
+document.write("sin(alfa) = "+sin_sie.toFixed(2));
+document.write ("<br>");
+
+document.write("cos(alfa) = "+cos_sie.toFixed(2));
+document.write ("<br>");
+
+document.write("tg(alfa) = "+tg_sie.toFixed(2));
+document.write ("<br>");
+
+document.write("ctg(alfa) = "+ctg_sie.toFixed(2));
+
+
+
+
+        </script>
+    </body>
+</html>
