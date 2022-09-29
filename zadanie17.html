@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+<title> Użycie fukcji </title>
+<meta charset="utf-8">
+</head>
+<body>
+<div style="color:navy;font-size:50px;">
+<script language="JavaScript">
+var a=parseFloat(prompt("a=",""));
+var b=parseFloat(prompt("b=",""));
+function suma_sie(a, b) {
+return a + b;
+}
+function odejmowanie_sie(a, b) {
+return a - b;
+}
+function mnozenie_sie(a, b) {
+return a * b;
+}
+function od_kwadratu_sie(a, b) {
+var a =Math.pow(a,2);
+var b =Math.pow(b,2);
+var ab= a+", "+b;
+return(ab);
+}
+function reszta_z_dzielenia_a_przez_b_sie(a,b){
+return a%b;
+
+
+
+}
+
+
+document.write("suma="+suma_sie(a,b)+"<br>");
+document.write("wynik odejmowania="+odejmowanie_sie(a,b)+"<br>");
+document.write("wynik mnożenia="+mnozenie_sie(a,b)+"<br>");
+document.write("wynik kwadratu="+od_kwadratu_sie(a,b)+"<br>");
+document.write("Reszta z dzielenia="+reszta_z_dzielenia_a_przez_b_sie(a,b)+"<br>");
+
+function zamknij_sie(){
+window.close();
+            }
+
+</script>
+<input type="button" name="przycisk" value="Zamknij Okno" onclick="zamknij_sie(' ')">
+</div>
+</body>
+</html>
