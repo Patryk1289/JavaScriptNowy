@@ -1,0 +1,72 @@
+<html>
+    <head>
+<script language="Javascript">
+    function okno_zamknij_Siepka()
+{
+window.close();
+}
+</script>
+    </head>
+    <body>
+        <textarea cols="60" rows="60">
+            <html>
+                <head>
+                    <meta charset="utf-8">
+                </head>
+                <body>
+                    <script lanugage="Javascript">
+            var b_sie=Number(prompt("Podaj długość boku b:",""));
+            var c_sie=Number(prompt("Podaj długość boku c:",""));
+            
+            var a_sie=Math.sqrt(Math.pow(c_sie,2)-Math.pow(b_sie,2));
+            var pole_sie=(a_sie*b_sie)/2;
+            var h3_sie=(a_sie*b_sie)/c_sie;
+            var sin_sie=a_sie/c_sie;
+            var cos_sie=b_sie/c_sie;
+            var tg_sie=a_sie/b_sie;
+            var ctg_sie=b_sie/a_sie;
+            var alfa_sie=Math.sin(a_sie/c_sie)*180/Math.PI;
+            var beta_sie=90-alfa_sie;
+            
+            
+            document.write("Bok wynosi="+a_sie.toFixed(3)+"cm");
+            document.write("<br></br>");
+            document.write("Pole wynosi="+pole_sie.toFixed(3)+"cm");
+            document.write("<br></br>");
+            document.write("wysokość h1="+a_sie.toFixed(3)+"cm");
+            document.write("<br></br>");
+            document.write("wysokość h2="+b_sie.toFixed(3)+"cm");
+            document.write("<br></br>");
+            document.write("wysokość h3="+h3_sie.toFixed(3)+"cm");
+            document.write("<br></br>");
+            document.write("sin-alfa="+sin_sie.toFixed(3)+"");
+            document.write("<br></br>");
+            document.write("cos-alfa="+cos_sie.toFixed(3)+"");
+            document.write("<br></br>");
+            document.write("tg-alfa="+tg_sie.toFixed(3)+"");
+            document.write("<br></br>");
+            document.write("ctg-alfa="+ctg_sie.toFixed(3)+"");
+            document.write("<br></br>");
+            document.write("Alfa="+alfa_sie.toFixed(3)+"°");
+            document.write("<br></br>");
+            document.write("Beta="+beta_sie.toFixed(3)+"°");
+            
+            
+            function okno_zamknij_Siepka()
+{
+window.close();
+}
+
+
+        </script>
+        <input type="button" name="przycisk" value="Zamknij Okno" onclick="okno_zamknij_Siepka(' ')">
+                </body>
+            </html>
+
+
+
+
+        </textarea>
+        <input type="button" name="przycisk" value="Zamknij Okno" onclick="okno_zamknij_Siepka(' ')">
+    </body>
+    </html>
