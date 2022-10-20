@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script language="Javascript">
+
+           
+             function okno_zamknij_Siepka()
+            {
+            window.close();
+            }
+            
+            </script>
+    </head>
+<body>
+   <h1>1.Wymień cztery sposoby wyprowadzania danych w JS</h1>
+   <h3>
+    <ol>
+  <li> z użyciem dokument.write()
+    <li> z użyciem okienka alert()
+    <li> do okienek formularza
+    <li> do tabeli
+</ol>
+   </h3>
+   <h1>2.Czym jest funkcja w JS, omów przy użyciu 4 podpunktów?</h1>
+   <h3>
+    <ol>
+      
+      <li>Jest to zbiór zgrupowanych instrukcji, które możemy uruchamiać poprzez podanie ich nazwy,
+        <li>  Każda funkcja po wywołaniu wykonuje swój wewnętrzny kod,
+            <li>   Funkcja może mieć argumenty, które wchodzą do wnętrza funkcji i są tam przetwarzane np.suma_kry(a, b),
+                <li> Może(nie zawsze) zwrócić obliczoną wartość zapisaną po słowie kluczowym return.
+</ol>
+   </h3>
+   <h1>3.Omów metody getElementsByName, getElementById, getElementByTagName </h1>
+   <table>
+<tr>
+    <td><b>metoda</b></td>    <td><b>opis</b></td>
+</tr>
+<tr>
+    <td>getElementById("id ")</td>    <td>dostęp do wszystkich elementów o konkretnej wartości atrybutu id</td>
+</tr>
+
+<tr>
+    <td>getElementByTagName("znacznik ")</td>    <td>dostęp do wszystkich elementów o typie znacznika, np. P lub DIV</td>
+</tr>
+
+<tr>
+    <td>getElementByName("nazwa") </td>    <td>dostęp do wszystkich elementów o konkretnej wartości atrybutu</td>
+</tr>
+   </table>
+  
+   <h1>4.Omów właściwości innerHTML innerText className.</h1>
+   <h3>
+    <ol>
+    <li> innerHTML – jest to właściwość, która umożliwia odczyt, zmodyfikowanie, wstawienie, albo
+        <li> usunięcie kodu HTML z danego elementu HTML np. w tabeli,
+            <li>  innerText – umożliwia określenie ciągu znaków który zostanie umieszczony w elemencie,
+                <li>  className – umożliwia określenie klasy CSS użytej do prezentacji elementu.
+    </ol>
+   </h3>
+   <input type="button" name="przycisk" value="Zamknij Okno" onclick="okno_zamknij_Siepka(' ')">
+</body>
+    </html>

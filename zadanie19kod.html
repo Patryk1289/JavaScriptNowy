@@ -1,59 +1,68 @@
 <html>
     <head>
-<meta charset="utf-8">
+        <script language="Javascript">
+        function okno_zamknij_Siepka()
+        {
+        window.close();
+        }
+    </script>
     </head>
     <body>
-<textarea cols="80" rows="80">
+
+   
+<textarea cols="60" rows="60">
     <html>
-        <head>
-        <title>
-        Zadanie 19
-        </title>
-        <script language="JavaScript">
-            function Pole_Siepka(a_sie,b_sie){
-                a_liczba=parseFloat(a_sie)
-        b_liczba=parseFloat(b_sie)
-        P_wynik=a_liczba*b_liczba
-        document.getElementsByName('Pole')[0].value=P_wynik.toFixed(2);
-        alert("P="+P_wynik.toFixed(2)+" cm^2"); 
-        pokaz1.innerHTML="P="+P_wynik.toFixed(2)+" cm^2"+"<br>"; 
-            }
-        
-        
-            function Obwod_Siepka(a_sie,b_sie)
-        {
-        a_liczba=parseFloat(a_sie)
-        b_liczba=parseFloat(b_sie)
-        Obw_wynik=(2*a_sie)+(2*b_sie)
-        document.getElementsByName('Obwód')[0].value=Obw_wynik.toFixed(2);
-        alert("Obw="+Obw_wynik.toFixed(2)+" cm");
-        pokaz2.innerHTML="Obw="+Obw_wynik.toFixed(2)+"cm";
-        }
-        </script>
-        </head>
-        <body>
-            Pobliczanie P i Obw 
-        <br> <br>
-        <form name="formularz" action="..." onsubmit="Pole_Siepka(this.boka.value,this.bokb.value);
-         Obwod_Siepka(this.boka.value,this.bokb.value);return false">
-        Podaj a=
-        <input size="6" name="boka">
-        Podaj b=
-        <input size="6" name="bokb">
-        <br> <br>
-        <input TYPE="submit" Value="oblicz" >
-        <br> <br>
-        P=
-        <input size="6" name="Pole">
-        Obw=
-        <input size="6" name="Obwód">
-        </form>
-        <table>
-        <tr id="pokaz1"></tr>
-        <tr id="pokaz2"></tr>
-        </table>
-        </body>
-        </html>
+<head>
+    <meta charset="utf-8">
+<title>
+
+ Przykład obliczenia Pola i Obwodu prostokąta
+</title>
+ <script language="Javascript">
+function P(a,b)
+{
+ a_liczba=parseFloat(a);
+ b_liczba=parseFloat(b);
+ P_wynik=a_liczba*b_liczba;
+ document.getElementsByName('Pole')[0].value=P_wynik.toFixed(2); 
+ alert("Pole="+P_wynik.toFixed(2)+" cm^3"); 
+ pokaz1.innerHTML="Pole="+P_wynik.toFixed(2)+" cm^3"+"<br>"; 
+}
+function Obw(a,b)
+{
+ a_liczba=parseFloat(a);
+ b_liczba=parseFloat(b);
+ Obw_wynik=(2*a_liczba)+(2*b_liczba);
+ document.getElementsByName('Obwod')[0].value=Obw_wynik.toFixed(2);
+ alert("Obwod="+Obw_wynik.toFixed(2)+" cm^2");
+ pokaz2.innerHTML="Obwod="+Obw_wynik.toFixed(2)+"cm^2";
+}
+ </script>
+</head>
+<body>
+Obliczanie V i Pc prostokąta
+<br> <br>
+<form name="formularz" action="..." onsubmit="P(this.boka.value,this.bokb.value);
+Obw(this.boka.value,this.bokb.value);return false">
+ Podaj a=
+ <input size="6" name="boka">
+ Podaj b=
+ <input size="6" name="bokb">
+ <br> <br>
+ <input TYPE="submit" Value="oblicz" >
+ <br> <br>
+ P=
+ <input size="6" name="Pole">
+ Obw=
+ <input size="6" name="Obwod">
+</form>
+<table>
+ <tr id="pokaz1"></tr>
+ <tr id="pokaz2"></tr>
+</table>
+</body>
+</html>
 </textarea>
+<input type="button" name="przycisk" value="Zamknij Okno" onclick="okno_zamknij_Siepka(' ')">
 </body>
 </html>

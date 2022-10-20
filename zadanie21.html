@@ -1,0 +1,56 @@
+<html>
+<head>
+    <meta charset="utf-8">
+<title>
+
+ Przykład obliczenia Pola i Obwodu prostokąta
+</title>
+ <script language="Javascript">
+    function okno_zamknij_Siepka()
+{
+window.close();
+}
+function Drabina(x,d)
+{
+ x_liczba=parseFloat(x);
+ d_liczba=parseFloat(d);
+ D_wynik=Math.sqrt(Math.pow(x_liczba,2)+Math.pow(d_liczba,2));
+ document.getElementsByName('Dra')[0].value=D_wynik.toFixed(2); 
+ alert("Drabina="+D_wynik.toFixed(2)+" m"); 
+ pokaz1.innerHTML="Drabina="+D_wynik.toFixed(2)+" m"+"<br>"; 
+}
+function Alfa(x,d)
+{
+ x_liczba=parseFloat(x);
+ d_liczba=parseFloat(d);
+A_wynik=((180*Math.atan(x_liczba))/Math.PI);
+ document.getElementsByName('Alf')[0].value=A_wynik.toFixed(2);
+ alert("Alfa="+A_wynik.toFixed(2)+"°");
+ pokaz2.innerHTML="Alfa="+A_wynik.toFixed(2)+"°";
+}
+ </script>
+</head>
+<body>
+Obliczanie odległości od drabiny i kąta
+<br> <br>
+<form name="formularz" action="..." onsubmit="Drabina(this.bokx.value,this.bokd.value);
+Alfa(this.bokx.value,this.bokd.value);return false">
+ Podaj x=
+ <input size="6" name="bokx">
+ Podaj d=
+ <input size="6" name="bokd">
+ <br> <br>
+ <input TYPE="submit" Value="oblicz" >
+ <br> <br>
+ Drabina=
+ <input size="6" name="Dra">
+ Alfa=
+ <input size="6" name="Alf">
+</form>
+<table>
+ <tr id="pokaz1"></tr>
+ <tr id="pokaz2"></tr>
+</table>
+</body>
+<input type="button" name="przycisk" value="Zamknij Okno" onclick="okno_zamknij_Siepka(' ')">
+</html>
