@@ -1,0 +1,41 @@
+<html>
+<head>
+<script type="text/javascript">
+function spodnie_siepka(nazwisko_k,imie_k,zawod_k)
+{
+this.kroj=kroj_k;
+this.material=material_k;
+this.rozmiar=rozmiar_k;
+this.styl=styl_k;
+}
+
+spodnie_siepka.prototype.spodnie_wyswietl_siepka = function () 
+{
+alert(this.kroj + ' ' + this.material+ ' ' + this.rozmiar+ ' ' + this.styl);
+};
+
+var spodnie1 = new spodnie_siepka("Straight ", "Jedwab", "32","Vintage"); 
+var spodnie2 = new spodnie_siepka('Slim ', 'Bawelna', '33','Casual');
+var spodnie3=new spodnie_siepka('Loose ', 'Skóra', '34','Y2K');
+
+spodnie1.spodnie_wyswietl_siepka(); 
+spodnie2.spodnie_wyswietl_siepka();
+
+document.write("dostęp do właściwości"+"<br>");
+
+document.write("Spodnie pierwsze"+" "+spodnie1.kroj+" "+spodnie1.material+" "+spodnie1.rozmiar+" "+spodnie1.styl);
+document.write("Spodnie drugie"+" "+spodnie2.kroj+" "+spodnie2.material+" "+spodnie2.rozmiar+" "+spodnie2.styl);
+document.write("Spodnie trzecie"+" "+spodnie3.kroj+" "+spodnie3.material+" "+spodnie3.rozmiar+" "+spodnie3.styl);
+
+function okno_zamknij_Siepka()
+            {
+            window.close();
+            }
+</script>
+</head>
+<body>
+<br>
+programowanie obiektowe
+<input type="button" name="przycisk" value="Zamknij Okno" onclick="okno_zamknij_Siepka(' ')">
+</body>
+</html>

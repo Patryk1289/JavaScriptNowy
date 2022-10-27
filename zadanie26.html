@@ -1,0 +1,25 @@
+<html>
+<head>
+<script type="text/javascript">
+var spodnie = {
+kroj: 'Straight',
+rozmiar: '34',
+material: 'Bawelna',
+spodnie_wyswietl_siepka: function ()
+{
+document.write(this.kroj + ' ' + this.rozmiar)
+}
+}
+spodnie.spodnie_wyswietl_siepka();
+function okno_zamknij_Siepka()
+            {
+            window.close();
+            }
+</script>
+</head>
+<body>
+<br>
+programowanie obiektowe
+<input type="button" name="przycisk" value="Zamknij Okno" onclick="okno_zamknij_Siepka(' ')">
+</body>
+</html>
