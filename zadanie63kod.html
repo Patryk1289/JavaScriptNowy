@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script language="Javascript">
+            function zamknij{
+                window.close();
+            }
+        </script>
+    </head>
+    <body>
+        <textarea cols="60" rows="60">
+            <html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script language="Javascript">
+            function oblicz(){
+              var kolor=prompt("Podaj który kolor chcesz wyświetlić","");
+              if(kolor==1 || kolor.toLowerCase()==="czerwony"){
+                document.write ("<p style=\"font-size: 17px; color: red;\"><br>Wczytałeś kolor czerwony<br></p>");
+              }
+              else if(kolor==2 || kolor.toLowerCase()==="niebieski"){
+                document.write ("<p style=\"font-size: 11px; color: blue;\"><br>Wczytałeś kolor niebieski<br></p>");
+              }
+            }
+            function zamknij()
+{
+window.close();
+}
+        </script>
+        <span style="color:green; font-size: 28px;">MENU</span>
+        <br>
+        <br>
+        <span style="color:red; font-size: 28px;">1 - czerowny</span>
+        <br>
+        <span style="color:blue; font-size: 28px;">2 - niebieski</span>
+        <br>
+        <input type="button" value="oblicz" onclick="oblicz()">
+<br>
+        <input type="button" name="przycisk" value="Zamknij Okno" onclick="zamknij()">
+    </form>
+    </body>
+    </html>
+    
+        </textarea>
+        <input type="button" name="przycisk" value="Zamknij Okno" onclick="zamknij()">
+    </body>
+</html>
