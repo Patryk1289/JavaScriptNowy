@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script type="text/Javascript">
+            function okno_zamknij_Siepka()
+            {
+            window.close();
+            }
+        </script>
+    </head>
+    <body>
+        <textarea cols="60" rows="60">
+           <html>
+<head>
+<script type="text/javascript">
+var spodnie = {
+kroj: 'Straight',
+rozmiar: '36',
+material: 'Bawelna',
+spodnie_wyswietl_siepka: function ()
+{
+document.write(this.kroj + ' ' + this.rozmiar)
+}
+}
+spodnie.spodnie_wyswietl_siepka();
+spodnie.styl=Vintage;
+spodnie.spodnie_pokaz_siepka=function() {alert('Styl: ' + this.styl)}
+spodnie.spodnie_pokaz_siepka();
+function okno_zamknij_Siepka()
+            {
+            window.close();
+            }
+</script>
+</head>
+<body>
+<br>
+programowanie obiektowe
+<input type="button" name="przycisk" value="Zamknij Okno" onclick="okno_zamknij_Siepka(' ')">
+</body>
+</html>
+        </textarea>
+        <input type="button" name="przycisk" value="Zamknij Okno" onclick="okno_zamknij_Siepka(' ')">
+    </body>
+</html>
