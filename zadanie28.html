@@ -1,12 +1,12 @@
 <html>
 <head>
 <script type="text/javascript">
-function spodnie_siepka(nazwisko_k,imie_k,zawod_k)
+function spodnie_siepka(kroj_sie,material_sie,rozmiar_sie,styl_sie)
 {
-this.kroj=kroj_k;
-this.material=material_k;
-this.rozmiar=rozmiar_k;
-this.styl=styl_k;
+this.kroj=kroj_sie;
+this.material=material_sie;
+this.rozmiar=rozmiar_sie;
+this.styl=styl_sie;
 }
 
 spodnie_siepka.prototype.spodnie_wyswietl_siepka = function () 
@@ -20,12 +20,15 @@ var spodnie3=new spodnie_siepka('Loose ', 'Skóra', '34','Y2K');
 
 spodnie1.spodnie_wyswietl_siepka(); 
 spodnie2.spodnie_wyswietl_siepka();
+            spodnie3.spodnie_wyswietl_siepka();
 
 document.write("dostęp do właściwości"+"<br>");
 
-document.write("Spodnie pierwsze"+" "+spodnie1.kroj+" "+spodnie1.material+" "+spodnie1.rozmiar+" "+spodnie1.styl);
-document.write("Spodnie drugie"+" "+spodnie2.kroj+" "+spodnie2.material+" "+spodnie2.rozmiar+" "+spodnie2.styl);
-document.write("Spodnie trzecie"+" "+spodnie3.kroj+" "+spodnie3.material+" "+spodnie3.rozmiar+" "+spodnie3.styl);
+document.write("Spodnie pierwsze"+"  Krój:"+spodnie1.kroj+", Materiał: "+spodnie1.material+", Rozmiar: "+spodnie1.rozmiar+", styl: "+spodnie1.styl);
+document.write("<br>")
+document.write("Spodnie drugie"+"  Krój:"+spodnie2.kroj+", Materiał: "+spodnie2.material+", Rozmiar: "+spodnie2.rozmiar+", styl: "+spodnie2.styl);
+document.write("<br>")
+document.write("Spodnie trzecie"+"  Krój:"+spodnie3.kroj+", Materiał: "+spodnie3.material+", Rozmiar: "+spodnie3.rozmiar+", styl: "+spodnie3.styl);
 
 function okno_zamknij_Siepka()
             {
@@ -35,7 +38,6 @@ function okno_zamknij_Siepka()
 </head>
 <body>
 <br>
-programowanie obiektowe
 <input type="button" name="przycisk" value="Zamknij Okno" onclick="okno_zamknij_Siepka(' ')">
 </body>
 </html>
