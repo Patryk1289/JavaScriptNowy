@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script language="Javascript">
+var x=Number(prompt("Podaj pierwsza liczbe",""));
+var y=Number(prompt("Podaj druga liczbe",""));
+
+if(x<y){
+    document.write("<div style=\"color:green; font-size:60px;\">");
+for(i=x;i<=y;i++){
+    if(i%2!=0){
+        document.write("I="+i);
+        document.write("<br>");
+    }
+}
+
+
+
+        document.write("</div");
+}
+else if(x>y){
+    document.write("<div style=\"color:blue; font-size:30px;\">");
+        for(i=y;i<=x;i++){
+    if(i%2!=0){
+        
+        document.write("I="+i);
+        document.write("<br>");
+        
+    }
+}
+
+
+
+        document.write("</div");
+}
+else if(x==y){
+    alert("Liczby sa takie same, proszę wpisać ponownie");
+}
+
+        </script>
+    </body>
+    </html>

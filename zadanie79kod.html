@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <textarea cols="60" rows="60">
+            <html>
+                <head>
+                <meta charset="utf-8">
+                <title> Przykład użycia pętli </title>
+                <script language="JavaScript">
+                
+                    var x=prompt("Podaj r","");
+                    var r_sie=parseFloat(x);
+                    var licznik_sie=0;
+                
+                
+                    for ( var i=-Math.round(r_sie)-1; i<=Math.round(r_sie)+1; i++)
+                    {
+                              for ( var k=-Math.round(r_sie)-1; k<=Math.round(r_sie)+1; k++)
+                    {
+                      var  d_sie=Math.sqrt(i*i+k*k);
+                        if(d_sie<=r_sie){
+                            licznik_sie++;
+                        }
+                        document.write("("+i+","+k+")"+"&nbsp;&nbsp;");
+                        
+                    }
+                    document.write("<br>");
+                    }
+                    document.write("N="+licznik_sie);
+                
+                    </script>
+                </head>
+                <body>
+                </body>
+                </html>
+        </textarea>
+
+
+
+
+    </body>
+    </html>
