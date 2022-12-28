@@ -6,17 +6,19 @@
         <script language="Javascript">
             var a_sie=Number(prompt("Podaj a",""));
             var b_sie=Number(prompt("Podaj b",""));
-            document.write("b");
-            document.write("<br>");
+            var wiersz_sie="&nbsp&nbsp";
+
             for(i=0;i<b_sie;i++){
                 document.write("*");
             }
-            document.write("a");
+       
             for(i=0;i<=a_sie-3;i++){
+                var wiersz_sie="&nbsp&nbsp";
+                for(i=0;i<=a_sie-3;i++){
                 document.write("<br>");
-                document.write("* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; *");
+                document.write("*"+wiersz_sie.repeat(b_sie-2)+"*");
                 document.write("<br>");
-               
+                }
             }
             for(i=0;i<b_sie;i++){
                 document.write("*");
