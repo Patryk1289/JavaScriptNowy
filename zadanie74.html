@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script language="Javascript">
+            var l1_t_sie=prompt("Podaj pierwszą liczbe z przedziału od 20 do 60","");
+
+            if(l1_t_sie>60 || l1_t_sie<20){
+              
+                document.write("liczba l1 nie należy do przedziału <20,60>");
+                    document.write("<br>")
+            }
+
+            var l2_t_sie=prompt("Podaj  drugą liczbe z przedziału od 20 do 60","");
+
+            if( l2_t_sie>60 || l2_t_sie<20){
+                document.write("liczba l2 nie należy do przedziału <20,60>");
+            breakme;
+            }
+           var pocz_sie=Number(prompt("Podaj wielkość tekstu",""));
+           var tekst_sie=prompt("Podaj dowolny tekst","");
+           if(l1_t_sie<l2_t_sie){
+for(i=0;i<=100;i++){
+    if(pocz_sie>100){
+        break;
+    }
+    document.write("<p style=\"font-size:"+pocz_sie+"px; color: black;\"><br>"+tekst_sie+"<br></p>");
+    pocz_sie=pocz_sie+5;
+}
+           }
+
+
+
+           else if(l2_t_sie<l1_t_sie){
+            for(i=0;i<=100;i++){
+            if(pocz_sie<0){
+                break;
+    }
+    document.write("<p style=\"font-size:"+pocz_sie+"px; color: black;\"><br>"+tekst_sie+"<br></p>");
+    pocz_sie=pocz_sie-5;
+}
+           }
+        </script>
+    </body>
+</html>
