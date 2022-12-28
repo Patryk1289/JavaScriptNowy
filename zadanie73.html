@@ -4,28 +4,23 @@
     </head>
     <body>
         <script language="Javascript">
-         
-            var imie=prompt("Podaj imię","");
-             var nazwisko=prompt("Podaj nazwisko","");
-             var wiersz_sie="*";
-for ( var i=1; i<=(nazwisko.length-2); i++)
-{
-Wiersz_sie=wiersz_sie+"&nbsp&nbsp";
-}
-var wiersz=wiersz_sie+"*";
-
-             for(i=0;i<nazwisko.length;i++){
-                document.write(wiersz);
+            var imie_sie=prompt("Podaj imię","");
+            var nazwisko_sie=prompt("Podaj nazwisko","");
+            var a_sie=(imie_sie.length%4)+5;
+            var b_sie=(nazwisko_sie.length)+20;
+            var wiersz_sie="&nbsp&nbsp";
+            for(i=0;i<b_sie;i++){
+                document.write("*");
             }
           
-            for(i=0;i<=imie.length-3;i++){
+            for(i=3;i<=a_sie;i++){
                 document.write("<br>");
-                document.write("*"+wiersz+"*");
+                document.write("*"+wiersz_sie.repeat(b_sie-2)+"*");
                 document.write("<br>");
                
             }
-            for(i=0;i<nazwisko.length;i++){
-                document.write(wiersz);
+            for(i=0;i<b_sie;i++){
+                document.write("*");
             }
         </script>
     </body>
